@@ -1,10 +1,13 @@
 const reverseString = function(word){
 
-let string = "";{
+let string = "";
 string = word;
-for (let i=0; i < word.length -1; i++)
-{
-    return word.split('').reverse().join('');
+    if (word === null || word === undefined || word === ''){
+        return '';
+    }
+    else {
+    for (let i=0; i < word.length; i++) {
+        return word.split('').reverse().join('');
 }
 }
 }
